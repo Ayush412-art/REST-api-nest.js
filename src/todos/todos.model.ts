@@ -13,4 +13,5 @@ export class todos extends Document {
     completed : boolean    
 
 }
-export const totos_Schema = SchemaFactory.createForClass(todos);
+export type todosDocument = todos & Document 
+export const todos_Schema = SchemaFactory.createForClass(todos);
